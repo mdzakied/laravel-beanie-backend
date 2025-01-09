@@ -26,7 +26,7 @@ class BeanController extends Controller
         }
 
         // Apply sorting
-        if (in_array($sort, ['title', 'price', 'created_at', 'arrived_at', 'total_sales'])) {
+        if (in_array($sort, ['title', 'price', 'created_at', 'arrived_at', 'total_sales', 'total_likes'])) {
             $query->orderBy($sort, $direction);
         }
 

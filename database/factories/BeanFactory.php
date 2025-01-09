@@ -29,6 +29,7 @@ class BeanFactory extends Factory
             'img' => $this->faker->imageUrl(),
             'arrived_at' => $this->faker->dateTimeThisYear(),
             'total_sales' => $this->faker->numberBetween(0, 1000), // Random total sales between 0 and 1000
+            'total_likes' => $this->faker->numberBetween(0, 1000), // Random total likes between 0 and 1000
         ];
     }
 }

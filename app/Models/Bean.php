@@ -21,6 +21,7 @@ class Bean extends Model
         'price',
         'arrived_at',
         'total_sales',
+        'total_likes',
     ];
 
     // Specify the formatting for the column
@@ -28,5 +29,6 @@ class Bean extends Model
         'price' => 'decimal:2', 
         'arrived_at' => 'datetime',
         'total_sales' => 'integer',
+        'total_likes' => 'integer',
     ];
 }

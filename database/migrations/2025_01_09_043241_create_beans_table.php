@@ -23,6 +23,7 @@ return new class extends Migration
             $table->decimal('price', 8, 2);  // 'price' column, with a maximum of 8 digits and 2 decimal places
             $table->timestamp('arrived_at')->nullable();
             $table->integer('total_sales')->default(0);
+            $table->integer('total_likes')->default(0);
             $table->timestamps();  // Automatically adds 'created_at' and 'updated_at'
         });
     }
