@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BeanController;
 
 // Catch-all route for undefined routes
 Route::fallback(function () {
@@ -12,9 +13,7 @@ Route::get('/', function () {
 });
 
 // API routes
-Route::get('/beans', function () {
-    return response()->json(['message' => 'API Beanies is working']);
-});
+Route::get('/beans', [BeanController::class, 'getAll']);
 
 Route::get('/articles', function () {
     return response()->json(['message' => 'API Articles is working']);
