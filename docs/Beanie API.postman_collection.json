@@ -104,6 +104,52 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "show all comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments?name=e&page=1&size=2&sort=name&direction=asc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "e"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "sort",
+							"value": "name",
+							"description": "name / created_at"
+						},
+						{
+							"key": "direction",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
