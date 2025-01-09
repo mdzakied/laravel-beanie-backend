@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeanController;
+use App\Http\Controllers\ArticleController;
 
 // Catch-all route for undefined routes
 Route::fallback(function () {
@@ -15,8 +16,6 @@ Route::get('/', function () {
 // API routes
 Route::get('/beans', [BeanController::class, 'getAll']);
 
-Route::get('/articles', function () {
-    return response()->json(['message' => 'API Articles is working']);
-});
+Route::get('/articles', [ArticleController::class, 'getAll']);
 
 

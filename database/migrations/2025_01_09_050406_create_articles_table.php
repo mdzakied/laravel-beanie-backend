@@ -12,8 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); 
+            $table->string('img')->nullable();  
+            $table->string('title');
+            $table->text('description')->nullable(); 
+            $table->timestamps();  // Automatically adds 'created_at' and 'updated_at'
         });
     }
 
