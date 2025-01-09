@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeanController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CommentController;
 
 // Catch-all route for undefined routes
 Route::fallback(function () {
@@ -17,5 +18,7 @@ Route::get('/', function () {
 Route::get('/beans', [BeanController::class, 'getAll']);
 
 Route::get('/articles', [ArticleController::class, 'getAll']);
+
+Route::get('/comments', [CommentController::class, 'getAll']);
 
 
