@@ -22,12 +22,12 @@ class BeanFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->word(),
+            'title' => $this->faker->unique()->word(),
             'subtitle' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
             'price' => $this->faker->randomFloat(2, 100, 500), // Random price between 100 and 500
-            'img' => $this->faker->imageUrl(),
-            'arrived_at' => $this->faker->dateTimeThisYear(),
+            'img' => $this->faker->imageUrl(640, 480, 'cofee', true),
+            'arrived_at' => $this->faker->unique()->dateTimeThisYear(),
             'total_sales' => $this->faker->numberBetween(0, 1000), // Random total sales between 0 and 1000
             'total_likes' => $this->faker->numberBetween(0, 1000), // Random total likes between 0 and 1000
         ];

@@ -24,6 +24,7 @@ class CommentFactory extends Factory
         return [
             'comment' => $this->faker->paragraph(),
             'name' => $this->faker->name(),
+            'created_at' => $this->faker->unique()->dateTimeThisYear(),
         ];
     }
 }
