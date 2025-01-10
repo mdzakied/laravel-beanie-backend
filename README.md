@@ -40,8 +40,8 @@ Here're some of the project's API Endpoint :
 | Endpoint           | Method | Description                            | Query Parameters                                      | Description for Query Parameters                                   |
 |--------------------|--------|----------------------------------------|------------------------------------------------------|--------------------------------------------------------------------|
 | `/beans`           | GET    | Show all beans                         | `title=Arabica&sort=arrived_at&direction=asc&page=1&size=5` | `sort`: id / title / price / created_at / arrived_at / total_sales / total_likes                     |
-| `/comments`           | GET    | Show all beans                         | `name=Arabica&sort=created_at&direction=asc&page=1&size=5` | `sort`: id / title / created_at                    |
-| `/articles`           | GET    | Show all beans                         | `title=Arabica&sort=created_at&direction=asc&page=1&size=5` | `sort`: id / name / created_at                    |
+| `/comments`           | GET    | Show all beans                         | `name=John&sort=created_at&direction=asc&page=1&size=5` | `sort`: id / title / created_at                    |
+| `/articles`           | GET    | Show all beans                         | `title=Best&sort=created_at&direction=asc&page=1&size=5` | `sort`: id / name / created_at                    |
 
 ---
   
