@@ -19,7 +19,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/beans?title=i&page=1&size=2&sort=total_sales&direction=asc",
+					"raw": "http://127.0.0.1:8000/api/beans?page=1&size=5",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -35,7 +35,8 @@
 					"query": [
 						{
 							"key": "title",
-							"value": "i"
+							"value": "i",
+							"disabled": true
 						},
 						{
 							"key": "page",
@@ -43,16 +44,18 @@
 						},
 						{
 							"key": "size",
-							"value": "2"
+							"value": "5"
 						},
 						{
 							"key": "sort",
 							"value": "total_sales",
-							"description": "title / price / created_at / arrived_at / total_sales / total_likes"
+							"description": "id / title / price / created_at / arrived_at / total_sales / total_likes",
+							"disabled": true
 						},
 						{
 							"key": "direction",
-							"value": "asc"
+							"value": "asc",
+							"disabled": true
 						}
 					]
 				}
@@ -65,7 +68,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/articles?title=e&page=1&size=2&sort=title&direction=asc",
+					"raw": "http://127.0.0.1:8000/api/articles?page=2&size=2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -81,11 +84,12 @@
 					"query": [
 						{
 							"key": "title",
-							"value": "e"
+							"value": "e",
+							"disabled": true
 						},
 						{
 							"key": "page",
-							"value": "1"
+							"value": "2"
 						},
 						{
 							"key": "size",
@@ -94,11 +98,13 @@
 						{
 							"key": "sort",
 							"value": "title",
-							"description": "title / created_at"
+							"description": "id / title / created_at",
+							"disabled": true
 						},
 						{
 							"key": "direction",
-							"value": "asc"
+							"value": "asc",
+							"disabled": true
 						}
 					]
 				}
@@ -111,7 +117,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/comments?name=e&page=1&size=2&sort=name&direction=asc",
+					"raw": "http://127.0.0.1:8000/api/comments?page=1&size=1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -127,7 +133,8 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "e"
+							"value": "e",
+							"disabled": true
 						},
 						{
 							"key": "page",
@@ -135,16 +142,18 @@
 						},
 						{
 							"key": "size",
-							"value": "2"
+							"value": "1"
 						},
 						{
 							"key": "sort",
 							"value": "name",
-							"description": "name / created_at"
+							"description": "id / name / created_at",
+							"disabled": true
 						},
 						{
 							"key": "direction",
-							"value": "asc"
+							"value": "DESC",
+							"disabled": true
 						}
 					]
 				}
