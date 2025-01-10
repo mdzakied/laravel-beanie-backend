@@ -31,12 +31,12 @@ class CommentController extends Controller
         }
 
         // Paginate the results with the 'size' parameter
-        $Comments = $query->paginate($size, ['*'], 'page', $page);
+        $comments = $query->paginate($size, ['*'], 'page', $page);
 
         // Return response
         return response()->json([
             'message' => 'Comments retrieved successfully',
-            'data' => $Comments,
+            'data' => $comments,
 
         ], 200);
     }
